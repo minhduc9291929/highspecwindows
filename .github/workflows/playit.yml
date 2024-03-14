@@ -19,6 +19,7 @@ jobs:
           echo "deb [signed-by=/etc/apt/trusted.gpg.d/playit.gpg] https://playit-cloud.github.io/ppa/data ./" | sudo tee /etc/apt/sources.list.d/playit-cloud.list
           sudo apt update
           sudo apt install playit
+          playit
       - name: cài win và khởi chạy
         run: |
           sudo chmod 666 /dev/kvm
